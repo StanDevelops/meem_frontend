@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Doom 2016 Text";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Doom 2016 Text"),
+    url("https://fonts.cdnfonts.com/s/42316/Doom2016Text-GOlBq.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "compact";
+  src: url("../../../assets/font/SpaceGrotesk-VariableFont_wght.ttf")
+      format("woff2"),
+    url("../../../assets/font/SpaceGrotesk-VariableFont_wght.ttf")
+      format("woff");
+}
+
+.navbar-side {
+  /* background-image: linear-gradient(0deg, #cbf9b6 4%, #79ff9d 35%, #8dff78 56%, #74ff74 79%, #b5ffb4 96%); */
+  background: linear-gradient(
+    rgba(82, 186, 136, 0.507),
+    rgba(28, 76, 206, 0.311)
+  );
+  border-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(20px);
+  height: fit-content;
+  max-height: 84%;
+  width: fit-content;
+  /* font-size: 1.2rem; */
+  display: grid;
+  justify-items: left;
+  box-shadow: 0px 0px 12px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+  margin-left: 0px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
+  position: fixed;
+  /* overflow: scroll; */
+  left: 0%;
+  top: 85px;
+  transition: ease-in;
+  transition-duration: 1s;
+  /* overflow: auto; */
+}
+.navbar-side-items {
+  display: none;
+  transition: ease-out;
+  transition-duration: 1s;
+  /* overflow: scroll; */
+  /* max-height: 76%; */
+}
+
+.navbar-side-items.toggled {
+  display: grid;
+  /* transition:ease-in;
+    transition-duration: 0.69s; */
+}
+
+/* ul.categories {
+  overflow: scroll;
+} */
+
+li.nav-menu-side:hover .nav-links-side {
+  /* display: flex; */
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.217) 23%,
+    #86eea782 100%
+  );
+  border-color: rgba(255, 255, 255, 0);
+  box-shadow: 1px 3px 10px 2px rgb(28, 26, 26);
+  border-style: none;
+  color: black;
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: pointer;
+  transition: ease-in;
+  transition-duration: 0.2s;
+  text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+li.nav-menu-side:hover #active.nav-links-side {
+  /* display: flex; */
+  background: linear-gradient(74deg, #ffffff4d 60%, #026ed480 90%);
+  border-radius: 3px;
+  color: black;
+  text-shadow: 2px 1px 1px rgb(255, 255, 255);
+
+  padding-left: 4px;
+  padding-right: 4px;
+  cursor: pointer;
+  transition: ease-out;
+  transition-duration: 0.2s;
+}
+
+.nav-links-side img {
+  margin: 3px;
+  margin-right: 10px;
+  border-radius: 0.3rem;
+  height: 69px;
+  width: 69px;
+  color: rgba(255, 255, 255, 0.189);
+}
+
+#active.nav-links-side {
+  border-color: rgb(255, 255, 240, 100);
+  background: linear-gradient(
+    74deg,
+    rgba(255, 255, 255, 0.249),
+    rgba(2, 110, 212, 0.45) 100%
+  );
+  box-shadow: 1px 3px 10px 2px rgb(28, 26, 26);
+  transition-duration: 0.4s;
+  backdrop-filter: blur(5px);
+}
+
+.nav-links-side {
+  /* display: flex; */
+  background-image: none;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-color: rgba(255, 255, 240, 0);
+  border-width: 2px;
+  border-style: none;
+  border-radius: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  transition-duration: 0.69s;
+  font-family: "Doom 2016 Text";
+  font-size: 19pt;
+  letter-spacing: 2pt;
+  text-shadow: 2px 2px 1px rgb(16, 15, 15);
+}
+
+.menu-bars {
+  margin-top: 6px;
+  margin-left: 9px;
+  margin-right: 12px;
+  /* margin-bottom: 10px; */
+  color: black;
+  background-color: rgba(240, 248, 255, 0.217);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  object-fit: contain;
+
+  /* position: fixed;
+  top: 0; */
+}
+
+.menu-bars:hover {
+  color: rgb(0, 0, 0);
+  /* background-color: black; */
+  border-radius: 10px;
+  background-color: rgba(51, 57, 62, 0.571);
+}
+
+.navbar-side span.MuiChip-label {
+  background-color: transparent;
+  font-family: "compact";
+  font-size: 16pt;
+  letter-spacing: 1pt;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(27, 25, 25, 0.918);
+  padding-bottom: 6px;
+  padding-top: 4px;
+}
+
+.navbar-side svg.MuiChip-iconColorDefault {
+  color: #ffffff;
+}
+span.MuiChip-label {
+  /* font-family: "compact"; */
+  font-size: 12pt;
+  /* text-shadow: 0px 0px 1px rgb(16, 15, 15); */
+}
+/* .menu-bars svg {
+  width: 42px;
+  height: 42px;
+} */
+
+.navbar-side-items ul.categories {
+  list-style: none;
+  display: grid;
+  /* margin-top: 1rem; */
+  margin-right: 1px;
+  margin-bottom: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  max-height: 70vh;
+  overflow: scroll;
+  overscroll-behavior: inherit;
+}

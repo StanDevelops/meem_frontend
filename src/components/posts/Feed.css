@@ -1,0 +1,172 @@
+/* span.MuiTypography-root { */
+span.MuiTypography-root.MuiTypography-body2.MuiCardHeader-title {
+  font-size: 12pt;
+  color: rgb(44, 44, 44);
+  width: fit-content;
+  /* text-shadow: 0px 0px 2px #222020b7; */
+  /* outline-style: double; */
+  /* -webkit-text-stroke: 0.1pt #000000b7; */
+  /* font-weight: bold; */
+}
+.MuiTypography-root.MuiTypography-body2.MuiCardHeader-title:hover {
+  color: rgb(0, 186, 254);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.MuiCardActions-root span.MuiChip-label {
+  text-shadow: 0px 0px 3px #000000c4;
+}
+
+.MuiCard-root img.MuiAvatar-img {
+  object-fit: scale-down;
+}
+
+#postTitle {
+  font-size: 14pt;
+  color: rgb(247, 255, 250);
+  text-shadow: 1px 1px 2px #000000b7;
+  /* outline-style: double; */
+  /* -webkit-text-stroke: 0.1pt #000000b7; */
+  font-weight: bold;
+  overflow-wrap: break-word;
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+}
+
+/* .MuiCardActions-root .MuiChip-colorSecondary { */
+#share {
+  background: linear-gradient(
+    270deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(255, 61, 61, 1) 50%,
+    rgba(246, 227, 12, 1) 100%
+  );
+  margin: 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  backdrop-filter: blur(10px);
+  color: white;
+  height: 44px;
+  width: 44px;
+}
+
+#share:hover {
+  /* backdrop-filter: blur(10px); */
+  background-position: right center; /* change the direction of the change here */
+  /* text-decoration: none; */
+}
+
+/* .MuiCardActions-root .MuiChip-colorInfo { */
+#comments {
+  background: linear-gradient(to right, #83a4d4 0%, #1fcfb7e9 51%, #8eb7f5 70%);
+  margin: 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* backdrop-filter: blur(10px); */
+  color: white;
+  height: 44px;
+  width: 44px;
+}
+
+#comments:hover {
+  background-position: right center; /* change the direction of the change here */
+}
+
+#upvote {
+  background-image: linear-gradient(
+    to right,
+    #0101017e 0%,
+    #2fc131a7 70%,
+    #64e02ab1 110%
+  );
+  margin: 10px;
+  transition: 0.5s;
+  background-size: 190% auto;
+  backdrop-filter: blur(10px);
+  color: white;
+  height: 44px;
+  width: 44px;
+}
+
+#upvote:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* post action button icon */
+.MuiCardActions-root .MuiSvgIcon-root {
+  color: white;
+  height: 26px;
+  width: 26px;
+}
+/* post action button icon
+.MuiCardActions-root .MuiSvgIcon-root {
+  color: white;
+} */
+#upvoted {
+  background-image: linear-gradient(
+    to right,
+    #54b826 0%,
+    #1e6500 51%,
+    #3fb807 90%
+  );
+  /*color: linear-gradient(to top, #00c3ff43, #70cb1b64);*/
+  margin: 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-clip: content-box;
+  color: white;
+  height: 44px;
+  width: 44px;
+}
+
+#upvoted:hover {
+  background-position: right top; /* change the direction of the change here */
+  cursor: pointer;
+}
+
+#downvote {
+  background-image: linear-gradient(
+    to right,
+    #00000075 0%,
+    #0b2b9fb2 51%,
+    #0575e6 110%
+  );
+  margin: 10px;
+  transition: 0.5s;
+  background-size: 190% auto;
+  backdrop-filter: blur(10px);
+  color: white;
+  height: 44px;
+  width: 44px;
+}
+
+#downvote:hover {
+  background-position: right center; /* change the direction of the change here */
+  cursor: pointer;
+}
+
+#downvoted {
+  background-image: linear-gradient(
+    to right,
+    #0575e6 0%,
+    #021b79 51%,
+    #0575e6 100%
+  );
+  margin: 10px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-clip: content-box;
+  color: rgb(255, 204, 122);
+  height: 44px;
+  width: 44px;
+}
+
+#downvoted:hover {
+  background-position: right top; /* change the direction of the change here */
+  cursor: pointer;
+}

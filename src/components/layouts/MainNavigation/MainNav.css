@@ -1,0 +1,527 @@
+/* *********** Navbar Css *********** */
+@font-face {
+  font-family: "Doom 2016 Text";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Doom 2016 Text"),
+    url("https://fonts.cdnfonts.com/s/42316/Doom2016Text-GOlBq.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "compact";
+  src: url("../../../assets/font/SpaceGrotesk-VariableFont_wght.ttf")
+      format("woff2"),
+    url("../../../assets/font/SpaceGrotesk-VariableFont_wght.ttf")
+      format("woff");
+}
+
+/* .sticky {
+  position: fixed;
+  top: 0;
+} */
+
+.navbar-main {
+  /* background: linear-gradient(90deg, rgb(165, 255, 164) 0%, rgba(70,198,69,1) 26%, rgba(26,124,15,1) 100%); */
+  /* background: linear-gradient(90deg, rgba(79,255,176,1) 0%, rgba(0,227,183,1) 19%, rgba(0,198,187,1) 39%, rgba(0,169,186,1) 59%, rgba(0,139,179,1) 81%, rgba(0,110,165,1) 100%); */
+  background: linear-gradient(
+    90deg,
+    #66ff005e 0%,
+    rgba(0, 224, 112, 0.37717093673406865) 19%,
+    #00bc9961 39%,
+    rgba(0, 149, 160, 0.37717093673406865) 59%,
+    rgba(0, 109, 136, 0.3827731776304272) 81%,
+    #2f485894 100%
+  );
+  height: 70px;
+  /* font-family: 'Doom 2016 Text'; */
+  /* justify-items: flex-end; */
+  box-shadow: 0px 0px 10px 2px;
+  backdrop-filter: blur(30px);
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  margin-bottom: 1rem;
+  z-index: 0;
+  /* overflow: scroll; */
+}
+
+.navbar-main-items ul.tiers {
+  list-style: none;
+  display: inline-flex;
+  margin-top: 1rem;
+}
+
+.navbar-main-items {
+  /* background-color: black; */
+  display: inline-flex;
+  /* padding-right: 51%; */
+  width: 100%;
+  align-items: center;
+}
+
+/* ul.tiers {
+    list-style: none;
+    display: inline-flex;
+    margin-top: 1rem;
+  } */
+
+.navbar-main-icons {
+  display: inline-flex;
+}
+
+.navbar-brand {
+  color: #fff;
+  justify-self: center;
+  margin-left: 13px;
+  cursor: pointer;
+}
+.navbar-brand img {
+  margin: 3px;
+  height: 63px;
+  width: 126px;
+}
+
+li.nav-menu {
+  display: grid;
+  list-style: none;
+  text-align: center;
+  width: max-content;
+  justify-content: flex-start;
+  margin-right: 12px;
+  margin-left: 4px;
+}
+
+#active.nav-links {
+  border-color: rgb(255, 255, 240, 100);
+  background: linear-gradient(74deg, #ffe53b, #ff562a 60%, #d40202 100%);
+  box-shadow: 1px 3px 10px 2px rgb(28, 26, 26);
+  transition-duration: 0.6s;
+  transition: ease-in;
+}
+
+.nav-links {
+  /* display: flex; */
+  font-family: "Doom 2016 Text";
+  font-size: 23pt;
+  letter-spacing: 4pt;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  text-shadow: 3px 1px 2px rgb(20, 20, 20);
+  border-color: rgba(255, 255, 240, 0);
+  border-width: 4px;
+  border-style: outset;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-right: 6px;
+}
+
+li.nav-menu:hover .nav-links {
+  /* display: flex; */
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee3f 100%);
+  background-size: 300% 300%;
+  border-color: rgb(255, 255, 255);
+  -webkit-animation: GradientRotation 1.5s ease infinite;
+  -moz-animation: GradientRotation 1.5s ease infinite;
+  -o-animation: GradientRotation 1.5s ease infinite;
+  animation: GradientRotation 1.5s ease infinite;
+  box-shadow: 1px 3px 10px 2px rgb(28, 26, 26);
+  border-radius: 4px;
+  text-shadow: 3px 1px 2px rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 6px;
+  cursor: pointer;
+  transition: ease-in;
+  transition-duration: 0.4s;
+}
+
+li.nav-menu:hover #active.nav-links {
+  /* display: flex; */
+  /* background-color: rgb(36, 33, 33); */
+  /* background:  linear-gradient(90deg, #FFE53B 0%, #FF2525 74%); */
+  background: linear-gradient(74deg, #ffe53b, #ff562a 63%, #d40202 100%);
+  background-size: 300% 300%;
+  -webkit-animation: GradientRotation 3s ease infinite;
+  -moz-animation: GradientRotation 3s ease infinite;
+  -o-animation: GradientRotation 3s ease infinite;
+  animation: GradientRotation 3s ease infinite;
+  border-radius: 3px;
+  text-shadow: 3px 1px 2px rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-right: 6px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+@-webkit-keyframes GradientRotation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes GradientRotation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes GradientRotation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes GradientRotation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ***************buttons****************** */
+
+/* login and register buttons */
+.navbar-main-buttons {
+  display: inline-flex;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  /* font-size: x-large; */
+}
+/* login and register buttons */
+#main-buttons {
+  align-items: center;
+  font-family: "compact";
+  font-size: 16pt;
+}
+
+.navbar-main-loggedin {
+  display: contents;
+}
+/* profile dropdown */
+.dropbtn {
+  background-color: #af784c94;
+  color: white;
+  /* padding: 16px; */
+  font-size: 10px;
+  height: 55px;
+  width: 55px;
+  border: none;
+  cursor: pointer;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 0.3rem;
+  box-shadow: 1px 3px 10px 2px rgb(28, 26, 26);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.svg-inline--fa {
+  margin-right: 7px;
+  justify-self: start;
+}
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 120%;
+  right: 1%;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(231, 243, 237, 0.355);
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  min-width: 160px;
+  box-shadow: 1px 3px 10px 2px rgb(28, 26, 26);
+}
+.dropdown-content.show {
+  display: block;
+  animation: ease-in 0.69s;
+  transition-duration: 0.69s;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 12pt;
+  padding: 8px 12px;
+  justify-self: end;
+  text-decoration: none;
+  text-align: end;
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 7px;
+  margin-right: 7px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.dropdown-content a:hover {
+  background: rgba(30, 30, 27, 0.413);
+  color: white;
+  /* border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem; */
+}
+
+#logout-opt {
+  color: #f30c0c;
+  font-size: 11pt;
+  text-shadow: 1px 1px 1px rgba(185, 37, 37, 0.802);
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 7px;
+  margin-right: 7px;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+#logout-opt:hover {
+  background: #f30c0ca1;
+  color: #ffffff;
+  font-size: 11pt;
+}
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+
+/* .dropdown:hover .dropbtn {
+  background-color: #ccd550;
+} */
+
+#main-loggedin {
+  align-items: center;
+  position: absolute;
+  right: 1%;
+  justify-content: end;
+  /* font-family: "Doom 2016 Text"; */
+  font-size: 20pt;
+}
+
+/* #pfButton {
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+#pfButton:hover {
+} */
+
+#pfp {
+  height: 39px;
+  width: 39px;
+  border-radius: 2rem;
+  /* border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem; */
+}
+
+#login {
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  margin-left: 10px;
+  margin-right: 5px;
+  padding-left: 6px;
+  padding-right: 6px;
+  /* letter-spacing: 1.5pt;s */
+  background-image: linear-gradient(
+    to right,
+    #ff4e50 0%,
+    #f9d423 51%,
+    #ff4e50 100%
+  );
+  box-shadow: 0 0 20px rgb(11, 7, 7);
+  color: rgb(33, 31, 31);
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* float:right; */
+}
+
+#login:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#signup {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+  margin-left: 5px;
+  margin-right: 10px;
+  padding-left: 6px;
+  padding-right: 6px;
+  /* letter-spacing: 1.5pt; */
+  background-image: linear-gradient(
+    to right,
+    #00c9ff 0%,
+    #92fe9d 51%,
+    #00c9ff 100%
+  );
+  box-shadow: 0 0 20px rgb(11, 7, 7);
+  color: rgb(33, 31, 31);
+  border-color: rgba(197, 197, 197, 0.139) 39%;
+
+  transition: 0.5s;
+  background-size: 200% auto;
+  /* float:right; */
+}
+
+#signup:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* *********** search *************** */
+
+.searchbox-main {
+  margin-left: 100px;
+  margin-right: 0px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 10px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.navbar-main-search {
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-items: center;
+}
+
+.navbar-main-search img {
+  border-width: 2px;
+  border-style: outset;
+  border-radius: 100%;
+  padding: 6px;
+  margin-left: 6px;
+  border-color: rgb(13, 20, 12);
+  background-color: rgba(255, 255, 255, 0.454);
+}
+.navbar-main-search img:hover {
+  border-width: 2px;
+  border-style: outset;
+  border-radius: 100%;
+  padding: 6px;
+  border-color: rgb(13, 20, 12);
+  background-color: rgb(114, 254, 137);
+  cursor: pointer;
+  transition-duration: 1s;
+}
+
+/* ************* icons ************ */
+
+/* logged in profile and notifications */
+.navbar .nav_right > ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav_right ul li.nr_li {
+  margin-left: 25px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar .nav_right ul li.nr_li:hover {
+  color: #cefffc;
+}
+
+.navbar .nav_right ul li img {
+  width: 35px;
+  vertical-align: middle;
+}
+
+/* .navbar .dd_menu {
+  position: absolute;
+  right: -25px;
+  top: 47px;
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+.navbar .dd_menu .dd_left {
+  background: #74ded8;
+  padding: 15px 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.navbar .dd_menu .dd_left li {
+  color: #fff;
+}
+
+.navbar .dd_menu .dd_right {
+  padding: 15px 20px;
+}
+
+.navbar .dd_menu li {
+  margin-bottom: 10px;
+  color: #868686;
+}
+
+.navbar .dd_menu:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  border: 10px solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.navbar .dd_main.active .dd_menu {
+  display: flex;
+} */

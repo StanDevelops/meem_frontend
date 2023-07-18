@@ -1,0 +1,65 @@
+/* Custom styles for recharts components */
+
+/* Line Chart Container */
+.recharts-wrapper {
+    margin: 0 auto;
+}
+
+/* X-Axis Label */
+.recharts-cartesian-axis-x .recharts-cartesian-axis-tick-value {
+    font-size: 12px;
+    fill: #888;
+}
+
+/* Y-Axis Label */
+.recharts-cartesian-axis-y .recharts-cartesian-axis-tick-value {
+    font-size: 12px;
+    fill: #888;
+}
+
+/* Tooltip */
+.recharts-tooltip {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    font-size: 12px;
+}
+
+/* Tooltip Label */
+.recharts-tooltip-label {
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Tooltip Value */
+.recharts-tooltip-item {
+    margin-bottom: 4px;
+}
+
+/* Tooltip Value Indicator */
+.recharts-tooltip-item-name {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+}
+
+/* Legend */
+.recharts-legend {
+    margin-top: 10px;
+}
+
+/* Legend Icon */
+.recharts-legend-icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 4px;
+}
+
+/* Legend Text */
+.recharts-legend-item-text {
+    font-size: 12px;
+    fill: #888;
+}
